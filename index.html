@@ -191,10 +191,11 @@
 
     /* PROJECTS */
 
-    .projects{
+  .projects{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:35px;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+  align-items:start;
 }
 
     .card{
@@ -297,7 +298,9 @@
       .hero p{
         font-size:18px;
       }
-
+.projects{
+  grid-template-columns:1fr;
+}
     }
 
   </style>
