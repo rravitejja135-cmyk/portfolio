@@ -233,29 +233,28 @@
     }
 
     /* SKILLS */
-<!-- REELS -->
+    /* REELS */
 
-<section id="reels">
+.reels-container{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
 
-  <h2 class="title">Video Reels</h2>
+.reel-video{
+  width:260px;
+  height:460px;
+  object-fit:cover;
+  border-radius:25px;
+  background:#111;
+  box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  transition:0.4s;
+}
 
-  <div class="reels-container">
-
-    <video class="reel-video" autoplay muted loop controls playsinline>
-      <source src="videos/reel1.mp4" type="video/mp4">
-    </video>
-
-    <video class="reel-video" autoplay muted loop controls playsinline>
-      <source src="videos/reel2.mp4" type="video/mp4">
-    </video>
-
-    <video class="reel-video" autoplay muted loop controls playsinline>
-      <source src="videos/reel3.mp4" type="video/mp4">
-    </video>
-
-  </div>
-
-</section>
+.reel-video:hover{
+  transform:translateY(-10px) scale(1.03);
+}
     .skills{
       display:flex;
       flex-wrap:wrap;
@@ -473,6 +472,31 @@
       </div>
 
     </div>
+
+  </div>
+<!-- REELS -->
+
+<section id="reels">
+
+  <h2 class="title">Video Reels</h2>
+
+  <div class="reels-container">
+
+    <video class="reel-video" autoplay muted loop controls playsinline>
+      <source src="videos/Doctor1.mp4" type="video/mp4">
+    </video>
+
+    <video class="reel-video" autoplay muted loop controls playsinline>
+      <source src="videos/Doctor2.mp4" type="video/mp4">
+    </video>
+
+    <video class="reel-video" autoplay muted loop controls playsinline>
+      <source src="videos/Doctor3.mp4" type="video/mp4">
+    </video>
+
+    <video class="reel-video" autoplay muted loop controls playsinline>
+      <source src="videos/Doctor4.mp4" type="video/mp4">
+    </video>
 
   </div>
 
